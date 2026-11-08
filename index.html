@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Prachi ❤️ | A Diwali Surprise</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪔</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Yeseva+One&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#2a0a3d;--bg2:#6b1230;--gold:#ffc83d;--orange:#ff7a1a;--pink:#ff4f87;--card:rgba(255,255,255,.1);--txt:#fff6e6;--sub:#ffd9a8}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{font-family:'Baloo 2',system-ui,sans-serif;color:var(--txt);background:radial-gradient(circle at 50% 110%,var(--bg2),var(--bg1) 70%);overflow:hidden;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body::before{content:"";position:fixed;inset:0;background-image:radial-gradient(2px 2px at 20% 30%,#fff9,transparent),radial-gradient(2px 2px at 70% 20%,#fff9,transparent),radial-gradient(1.5px 1.5px at 40% 70%,#fff8,transparent),radial-gradient(2px 2px at 85% 60%,#fff9,transparent),radial-gradient(1.5px 1.5px at 10% 85%,#fff8,transparent);animation:tw 3s infinite alternate;pointer-events:none}
+@keyframes tw{to{opacity:.3}}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:50}
+/* toran */
+#toran{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;display:flex;justify-content:space-around;z-index:20;pointer-events:none;overflow:hidden}
+#toran span{font-size:clamp(20px,5vw,34px);transform-origin:top center;animation:sw 2.4s ease-in-out infinite alternate;display:block;line-height:1}
+#toran span:nth-child(even){animation-delay:-1.2s}
+@keyframes sw{from{transform:rotate(-9deg)}to{transform:rotate(9deg)}}
+.stage{position:relative;height:100%;display:flex;align-items:center;justify-content:center;padding:70px 16px 90px}
+.scene{display:none;width:min(680px,100%);max-height:100%;overflow-y:auto;text-align:center;padding:6px}
+.scene.on{display:block;animation:pop .6s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{opacity:0;transform:scale(.8) translateY(30px) rotate(-2deg)}}
+.tag{display:inline-block;background:linear-gradient(90deg,var(--orange),var(--pink));padding:3px 14px;border-radius:99px;font-size:.8rem;font-weight:800;letter-spacing:.08em;margin-bottom:10px}
+h1,h2{font-family:'Yeseva One',serif;font-weight:400;line-height:1.1;margin:6px 0 12px;background:linear-gradient(90deg,#fff2b0,var(--gold),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 14px #ff9a2a66)}
+h1{font-size:clamp(2.4rem,9vw,4.2rem)}h2{font-size:clamp(1.7rem,6vw,2.5rem)}
+em{font-style:italic}
+p{font-size:clamp(1rem,3.4vw,1.15rem);line-height:1.55;margin:8px 0;color:var(--txt)}
+p.s{color:var(--sub)}
+b{color:var(--gold)}
+.card{background:var(--card);border:1px solid #ffc83d55;border-radius:22px;padding:16px 18px;backdrop-filter:blur(6px);margin-top:14px;box-shadow:0 0 30px #ff7a1a22}
+button{font:inherit;font-weight:800;border:0;cursor:pointer;color:#3a0a1a;background:linear-gradient(180deg,#ffe27a,var(--orange));padding:10px 22px;border-radius:99px;box-shadow:0 5px 0 #a8440a,0 0 18px #ffb34766;transition:transform .12s}
+button:active{transform:translateY(4px);box-shadow:0 1px 0 #a8440a}
+button.big{font-size:1.15rem;animation:bounce 1.4s infinite}
+@keyframes bounce{50%{transform:scale(1.07) rotate(-1.5deg)}}
+.row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:14px;align-items:flex-end}
+/* diya */
+.diya{position:relative;font-size:clamp(2.6rem,10vw,3.8rem);cursor:pointer;filter:grayscale(.8) brightness(.6);transition:.4s;user-select:none;line-height:1}
+.diya::after{content:"";position:absolute;left:50%;top:-2px;width:.32em;height:.5em;margin-left:-.16em;border-radius:50% 50% 50% 50%/65% 65% 35% 35%;background:radial-gradient(circle at 50% 70%,#fff,#ffd23a 50%,#ff6a00);opacity:0;transform:scale(.2);transform-origin:bottom}
+.diya.lit{filter:none;text-shadow:0 0 40px #ff9a1a;filter:drop-shadow(0 0 16px #ffb02e)}
+.diya.lit::after{opacity:1;transform:scale(1);animation:fl .25s infinite alternate;box-shadow:0 0 22px 8px #ffa72b99}
+@keyframes fl{to{transform:scale(1.15,.9) rotate(4deg)}}
+.hint{font-size:.85rem;color:var(--sub);margin-top:8px;opacity:.85}
+/* candle */
+.candle{position:relative;width:34px;height:90px;border-radius:6px 6px 4px 4px;background:linear-gradient(90deg,#f4e3c1,#fff7e3 50%,#e8cf9f);cursor:pointer;margin-top:34px;box-shadow:0 8px 0 #7a4a1a}
+.candle::before{content:"";position:absolute;left:50%;top:-8px;width:2px;height:8px;background:#333;margin-left:-1px}
+.candle::after{content:"";position:absolute;left:50%;top:-34px;width:16px;height:28px;margin-left:-8px;border-radius:50% 50% 50% 50%/65% 65% 35% 35%;background:radial-gradient(circle at 50% 75%,#fff,#ffd23a 50%,#ff6a00);opacity:0;transform:scale(.2);transform-origin:bottom;transition:.3s}
+.candle.lit::after{opacity:1;transform:scale(1);animation:fl .22s infinite alternate;box-shadow:0 0 30px 12px #ffa72b88}
+/* gods */
+.gods{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.god{flex:1;min-width:92px;max-width:170px;background:var(--card);border:1px solid #ffc83d66;border-radius:20px;padding:10px 6px}
+.god i{font-style:normal;font-size:2.6rem;display:block}
+.god small{font-weight:800;color:var(--gold)}
+.god.glow{animation:glow 1s infinite alternate}
+@keyframes glow{to{box-shadow:0 0 30px 6px #ffc83daa;transform:translateY(-6px)}}
+#thali{font-size:3rem;display:inline-block}
+#thali.spin{animation:circ 2.5s linear infinite}
+@keyframes circ{0%{transform:rotate(0) translateX(14px) rotate(0)}100%{transform:rotate(360deg) translateX(14px) rotate(-360deg)}}
+#lyrics{min-height:84px;margin-top:10px;font-weight:600;color:var(--gold)}
+#lyrics div{animation:pop .5s both}
+/* crackers */
+.ck{font-size:2.6rem;background:var(--card);border:2px dashed #ffc83d88;border-radius:20px;padding:10px 14px;box-shadow:none;color:var(--txt);min-width:92px}
+.ck small{display:block;font-size:.8rem;font-weight:800;color:var(--gold)}
+.shake{animation:shk .4s}
+@keyframes shk{20%{transform:translate(-8px,5px)}40%{transform:translate(8px,-6px)}60%{transform:translate(-6px,-4px)}80%{transform:translate(5px,6px)}}
+.nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:16px;padding:12px 12px calc(12px + env(safe-area-inset-bottom,0px));z-index:30;background:linear-gradient(transparent,#1a0626cc)}
+.nav button{padding:8px 18px}
+#ctr{font-weight:800;color:var(--sub);min-width:50px;text-align:center}
+.float{animation:flo 3s ease-in-out infinite alternate;display:inline-block}
+@keyframes flo{to{transform:translateY(-10px) rotate(4deg)}}
+</style>
+</head>
+<body>
+<canvas id="fx"></canvas>
+<div id="toran"></div>
+<main class="stage" id="stage">
+
+<section class="scene">
+  <div class="tag">✦ SAURABH × PRACHI · A LITTLE DIWALI WORLD</div>
+  <p class="s">A tiny surprise made just for you</p>
+  <h1>Happy Diwali, <em>Prachi!</em></h1>
+  <p>Ek chhoti si rangoli wali duniya… do dost… aur dher saari baatein. Come, I made a little world for us. 🪔</p>
+  <div class="row" id="heroDiyas"></div>
+  <p class="hint">👆 Diyas par tap karke unhe jalao! Kahin bhi tap karo = phataka 🎆</p>
+  <div class="row"><button class="big" data-next>Chalo andar chalte hain ✨</button></div>
+</section>
+
+<section class="scene">
+  <div class="tag">01 · Our little rangoli world</div>
+  <h2>Dooriyan bas <em>map par hain.</em></h2>
+  <p>Imagine ek colourful si duniya, har balcony par lights, har darwaze par rangoli… aur beech mein hum dono, apni hi bakbak mein busy.</p>
+  <div class="row">
+    <div class="card"><div class="float" style="font-size:2.4rem">🏮</div><b>SAURABH</b><br>UP</div>
+    <div class="float" style="font-size:2.6rem;align-self:center">💛</div>
+    <div class="card"><div class="float" style="font-size:2.4rem;animation-delay:-1s">🏮</div><b>PRACHI</b><br>PATNA</div>
+  </div>
+</section>
+
+<section class="scene">
+  <div class="tag">02 · A title I wear proudly</div>
+  <h2>Your official <em>frustration box.</em></h2>
+  <p>I love to be your <b>frustration box.</b> Tumhari har rant, har random thought, har chhoti-badi baat sunna genuinely meri favourite things mein se hai. Keep them coming, ma’am. I am listening. 🧡</p>
+  <div class="row"><button class="ck" data-fw="anaar">🎇<small>Rant karo → anaar!</small></button></div>
+</section>
+
+<section class="scene">
+  <div class="tag">03 · Things I could listen to forever</div>
+  <h2>Your voice. Your stories. <em>All of it.</em></h2>
+  <p>I love hearing you talk — your stories, your chants, your random explanations, literally everything. I don’t know how to explain it, but even the most ordinary thing sounds interesting when it’s coming from you.</p>
+  <p class="s">Some people just make even silence feel comfortable. You’re one of them. 🎶</p>
+</section>
+
+<section class="scene">
+  <div class="tag">04 · The video-call chapter</div>
+  <h2>That muh bana ke dekhna! 😂</h2>
+  <p>Whenever I roast you or tumhari bezatti karta hoon, and you make that face and look at me… I swear, I am so fond of that expression. I think I could annoy you just to see it again. (Thoda sa only.)</p>
+  <p class="s">Calls ho gayi, video calls bhi ho gayi… ab bas real-life wali chai aur bakbak pending hai. ☕</p>
+  <div class="row"><button class="ck" data-fw="bomb">😤💥<small>Roast karo!</small></button></div>
+</section>
+
+<section class="scene">
+  <div class="tag">05 · No jokes for this one</div>
+  <h2>You deserve a <em>safe place.</em></h2>
+  <p>I don’t know how people can hurt someone as lovely as you. But I want you to know this: I will never intentionally make you feel small or unsafe. I want you to be able to show up as your full self around me — happy, sad, angry, confused, or just full of unnecessary emergency rants.</p>
+  <p class="s">If you feel you can come to me on your difficult days, honestly… that’s enough for me.</p>
+  <div class="row" id="candles"></div>
+  <p class="hint" id="candleHint">🕯️ Candles jalao, ek ek karke</p>
+</section>
+
+<section class="scene">
+  <div class="tag">06 · Something you once said</div>
+  <h2>My pleasure, my dear ma’am. 🧡</h2>
+  <p>You say I’m one of the nicest people. No, my dear ma’am — it’s <b>my pleasure having you in my life.</b> I am proud that I can be someone’s comfort place, and even happier that you feel safe around me.</p>
+  <p class="s">Thank you for trusting me with your unfiltered self.</p>
+</section>
+
+<section class="scene">
+  <div class="tag">07 · A prayer beneath the diyas</div>
+  <h2>May life give you <em>everything beautiful.</em></h2>
+  <p>Dil se pray karta hoon ki tumhe life mein woh sab mile jo tum chahti ho — aur woh achhi cheezein bhi jinke baare mein tumne abhi socha tak nahi. Happiness, peace, success, good people, and a thousand reasons to smile. You deserve so much goodness, Prachi.</p>
+  <div class="gods">
+    <div class="god"><i>🐘</i><small>Ganesh Ji</small></div>
+    <div class="god"><i>🪷</i><small>Laxmi Maa</small></div>
+    <div class="god"><i>💰</i><small>Kuber Dev</small></div>
+  </div>
+  <div class="card">
+    <div id="thali">🪔</div> <button id="aartiBtn">🔔 Aarti shuru karo</button>
+    <div id="lyrics"></div>
+  </div>
+</section>
+
+<section class="scene">
+  <div class="tag">08 · One tiny selfish prayer 😂</div>
+  <h2>Manifesting a <em>successful Saurabh.</em></h2>
+  <p>Aur haan, mere liye bhi pray karna ki tumhara Saurabh future mein aur successful ho jaye… taaki woh tumhe har ghante nahi, <b>har minute kuch de sake.</b> 😂 Thoda selfish ho gaya, I know. Gift department ki request hai, reject mat karna.</p>
+  <div class="row"><button class="ck" data-fw="rocket">🚀<small>Wish bhejo!</small></button></div>
+</section>
+
+<section class="scene">
+  <div class="tag">09 · An extremely serious notice</div>
+  <h2>PG ka address bhej dena, <em>ma’am.</em> 😤</h2>
+  <p>Address nahi dogi toh tumhare college ke aage aa kar baith jayenge — poora din, poori raat. Aur phir mat kehna warning nahi di thi. <b>YEH AAPKO DHAMKI HAI. DHAMKI SAMAJHI AAP? 😂</b></p>
+  <p class="s">Bas ab tumse milna reh gaya hai. Jaldi milte hain, okay?</p>
+  <div class="row">
+    <button class="ck" data-fw="bomb">💣<small>Sutli bomb</small></button>
+    <button class="ck" data-fw="anaar">🎇<small>Anaar</small></button>
+    <button class="ck" data-fw="rocket">🚀<small>Rocket</small></button>
+  </div>
+</section>
+
+<section class="scene">
+  <div class="tag">10 · One last thing</div>
+  <h2>Ab itna apnapan <em>kahaan milta hai?</em></h2>
+  <p>Sirf tumhare saath hota hoon toh kitna bolta hoon, you know that. Kisi aur ke saath ab itni friendliness aur apnapan feel nahi hota. Aur jab tum baat karti ho, aisa lagta hai jaise tum mere paas hi baith kar sab bata rahi ho.</p>
+  <p class="s">Distance can’t really compete with a bond that feels this close. 💛</p>
+</section>
+
+<section class="scene">
+  <div class="tag">A little Diwali wish, from me to you</div>
+  <h2>Keep glowing, <em>Prachi.</em> 🪔</h2>
+  <p>Keep laughing, keep ranting, keep making those priceless faces. Whenever the world gets too loud, your frustration box is right here. Aur kabhi bhi koi help chahiye ho… I am just one call away from you.</p>
+  <p class="s">With warmth, unlimited roasting &amp; lots of affection,<br><b>Saurabh · Uttar Pradesh</b></p>
+  <div class="row"><button class="big" id="finale">Ek last phataka! 🎆</button></div>
+</section>
+
+</main>
+<div class="nav"><button id="prev">← Back</button><span id="ctr"></span><button id="next">Next scene →</button></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+/* toran */
+(function(){const t=$('#toran');let h='';for(let i=0;i<16;i++)h+='<span>'+(i%2?'🍃':'🌼')+'</span>';t.innerHTML=h})();
+/* scenes */
+const scenes=$$('.scene');let cur=0;
+function show(i){cur=Math.max(0,Math.min(scenes.length-1,i));scenes.forEach((s,k)=>s.classList.toggle('on',k===cur));$('#ctr').textContent=(cur+1)+' / '+scenes.length;$('#prev').style.visibility=cur?'visible':'hidden';$('#next').style.visibility=cur<scenes.length-1?'visible':'hidden';
+  if(cur>0)burst(innerWidth/2,innerHeight/3,18)}
+$('#prev').onclick=()=>show(cur-1);$('#next').onclick=()=>show(cur+1);
+$$('[data-next]').forEach(b=>b.onclick=()=>show(cur+1));
+addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1)});
+/* audio */
+let ac;function snd(type){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();const n=ac.currentTime,len=type==='bomb'?.5:.25,b=ac.createBuffer(1,ac.sampleRate*len,ac.sampleRate),d=b.getChannelData(0);
+ for(let i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/d.length,type==='bomb'?2:4);
+ const s=ac.createBufferSource();s.buffer=b;const g=ac.createGain();g.gain.value=type==='bomb'?1:.5;s.connect(g).connect(ac.destination);s.start(n)}catch(e){}}
+function bell(){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();const n=ac.currentTime;[880,1320].forEach((f,k)=>{const o=ac.createOscillator(),g=ac.createGain();o.frequency.value=f;g.gain.setValueAtTime(.18,n);g.gain.exponentialRampToValueAtTime(.001,n+1.4);o.connect(g).connect(ac.destination);o.start(n);o.stop(n+1.4)})}catch(e){}}
+/* fireworks canvas */
+const cv=$('#fx'),cx=cv.getContext('2d');let P=[];
+function rs(){cv.width=innerWidth*devicePixelRatio;cv.height=innerHeight*devicePixelRatio;cx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}rs();addEventListener('resize',rs);
+const COL=['#ffc83d','#ff4f87','#ff7a1a','#7dffb2','#6fd3ff','#fff'];
+function burst(x,y,n=60,big){const c=COL[Math.random()*COL.length|0],c2=COL[Math.random()*COL.length|0];
+ for(let i=0;i<n;i++){const a=Math.random()*6.283,v=(Math.random()*.6+.4)*(big?7:5);P.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,c:i%2?c:c2,g:.08,r:2.2})}}
+function spark(x,y){P.push({x,y,vx:(Math.random()-.5)*3,vy:-Math.random()*7-4,l:1,c:'#ffd23a',g:.18,r:2})}
+function loop(){cx.clearRect(0,0,innerWidth,innerHeight);cx.globalCompositeOperation='lighter';
+ P=P.filter(p=>p.l>0);for(const p of P){p.x+=p.vx;p.y+=p.vy;p.vy+=p.g;p.vx*=.985;p.l-=.014;cx.globalAlpha=Math.max(p.l,0);cx.fillStyle=p.c;cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.283);cx.fill()}
+ requestAnimationFrame(loop)}loop();
+function rocket(x){let y=innerHeight,ty=innerHeight*(.2+Math.random()*.25);const id=setInterval(()=>{y-=14;P.push({x:x+(Math.random()-.5)*3,y,vx:0,vy:1,l:.6,c:'#ffb02e',g:0,r:2});if(y<=ty){clearInterval(id);snd();burst(x,y,90,true)}},16)}
+function anaar(x,y){let t=0;const id=setInterval(()=>{for(let i=0;i<6;i++)spark(x,y);if(++t>90)clearInterval(id)},22);snd()}
+function bomb(){snd('bomb');$('#stage').classList.add('shake');setTimeout(()=>$('#stage').classList.remove('shake'),400);for(let i=0;i<4;i++)burst(innerWidth*(.2+Math.random()*.6),innerHeight*(.2+Math.random()*.4),50,true)}
+function fw(type,el){const r=el.getBoundingClientRect(),x=r.left+r.width/2,y=r.top;
+ if(type==='rocket')rocket(x);else if(type==='anaar')anaar(x,y+10);else bomb()}
+$$('[data-fw]').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();fw(b.dataset.fw,b)}));
+document.addEventListener('click',e=>{if(e.target.closest('button,.diya,.candle'))return;snd();burst(e.clientX,e.clientY,50)});
+$('#finale').onclick=e=>{e.stopPropagation();let k=0;const id=setInterval(()=>{if(k%3==0)rocket(innerWidth*Math.random());else{snd();burst(innerWidth*Math.random(),innerHeight*(.15+Math.random()*.4),70,true)}if(++k>24)clearInterval(id)},220);setTimeout(bomb,1200)};
+/* diyas */
+$('#heroDiyas').innerHTML='<div class="diya">🪔</div>'.repeat(5);
+$$('.diya').forEach(d=>d.onclick=()=>{d.classList.toggle('lit');if(d.classList.contains('lit')){const r=d.getBoundingClientRect();burst(r.left+r.width/2,r.top,14)}});
+/* candles */
+$('#candles').innerHTML='<div class="candle"></div>'.repeat(5);
+$$('.candle').forEach(c=>c.onclick=()=>{c.classList.toggle('lit');const all=$$('.candle').every(x=>x.classList.contains('lit'));
+ $('#candleHint').textContent=all?'✨ Saari candles jal gayi, ab dil se ek wish maang lo ✨':'🕯️ Candles jalao, ek ek karke';if(all){snd();burst(innerWidth/2,innerHeight/3,100,true)}});
+/* aarti */
+const L=['🐘 Jai Ganesh Deva, vighnaharta, sab ke dukh door karo','🪷 Jai Maa Laxmi, kamal wali, ghar mein barkat bharo','💰 Jai Kuber Dev, dhan ke raja, sukh samriddhi do','🔔 Sab ko khushiyan, Prachi ko sabse zyada! 🪔'];
+let busy=0;
+$('#aartiBtn').onclick=()=>{if(busy)return;busy=1;const ly=$('#lyrics'),g=$$('.god');ly.innerHTML='';$('#thali').classList.add('spin');
+ L.forEach((t,i)=>setTimeout(()=>{bell();ly.insertAdjacentHTML('beforeend','<div>'+t+'</div>');g.forEach((x,k)=>x.classList.toggle('glow',k===i));if(i<3)burst(innerWidth*(.25+.25*i),innerHeight*.3,30)},i*1700));
+ setTimeout(()=>{$('#thali').classList.remove('spin');g.forEach(x=>x.classList.add('glow'));busy=0},L.length*1700)};
+show(0);
+</script>
+</body>
+</html>
